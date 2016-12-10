@@ -21,6 +21,7 @@ require_once('functions/widgets/twitter-widget.php');
 require('functions/better-comments.php');
 //require('functions/custom-excerpt.php');
 require('functions/shortcodes/shortcodes.php');
+require('functions/plugins.php');
 
 /*--------------Remove junk from header------------*/
 remove_action( 'wp_head', 'rsd_link' );
