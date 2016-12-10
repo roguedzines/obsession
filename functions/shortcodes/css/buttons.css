@@ -1,0 +1,48 @@
+.friendly_button a{
+	border:1px solid #000; 
+	color:#fff; 
+	font-family:arial; 
+	font-weight:bold; 
+	padding:8px 24px; 
+	text-decoration:none; 
+	text-shadow:1px 1px 0px #000;
+	display:block; 
+	-moz-border-radius:6px; 
+	-webkit-border-radius:6px; 
+	border-radius:6px;
+	margin: 0 10px 10px 0; 
+}
+.friendly_button a:active{position:relative; top:1px}
+
+/******************************************************
+* sizes
+******************************************************/
+
+.friendly_button_large a{font-size:16px !important;}
+.friendly_button_small a{font-size: 11px !important; padding: 6px 16px;}
+.friendly_button_medium a{font-size: 12px; padding: 8px 22px; }
+
+/******************************************************
+* sizes
+******************************************************/
+
+.friendly_button_left {float: left;}
+.friendly_button_left a{margin: 0 10px 10px 0;}
+.friendly_button_right {float: right;}
+.friendly_button_right a{margin: 0 0 10px 10px;}
+.friendly_button_none {float: none; display: inline-block; zoom: 1; *display: inline; }
+
+/******************************************************
+* styles
+******************************************************/
+
+.friendly_button_round a {
+	-moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px
+}
+.friendly_button_less_round a {
+	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px
+}
+.friendly_button_square a {
+	-moz-border-radius:1px; -webkit-border-radius:1px; border-radius:1px
+}
+

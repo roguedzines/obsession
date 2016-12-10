@@ -1,0 +1,194 @@
+.list-style-01{
+	background:url(../functions/shortcodes/images/list/01.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}
+
+.list-style-02{
+	background:url(../functions/shortcodes/images/list/02.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-03{
+	background:url(../functions/shortcodes/images/list/03.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}
+.list-style-04{
+	background:url(../functions/shortcodes/images/list/04.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-06{
+	background:url(../functions/shortcodes/images/list/06a.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-07{
+	background:url(../functions/shortcodes/images/list/07.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-08{
+	background:url(../functions/shortcodes/images/list/08.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-09{
+	background:url(../functions/shortcodes/images/list/09.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-10{
+	background:url(../functions/shortcodes/images/list/10.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-10{
+	background:url(../functions/shortcodes/images/list/11.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-12{
+	background:url(../functions/shortcodes/images/list/12.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-13{
+	background:url(../functions/shortcodes/images/list/13.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-14{
+	background:url(../functions/shortcodes/images/list/14.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-15{
+	background:url(../functions/shortcodes/images/list/15.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-16{
+	background:url(../functions/shortcodes/images/list/16.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-17{
+	background:url(../functions/shortcodes/images/list/02.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-18{
+	background:url(../functions/shortcodes/images/list/17.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-19{
+	background:url(../functions/shortcodes/images/list/18.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-20{
+	background:url(../functions/shortcodes/images/list/19.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-21{
+	background:url(../functions/shortcodes/images/list/21.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-22{
+	background:url(../functions/shortcodes/images/list/22.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-23{
+	background:url(../functions/shortcodes/images/list/23.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-24{
+	background:url(../functions/shortcodes/images/list/24.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-25{
+	background:url(../functions/shortcodes/images/list/25.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-26{
+	background:url(../functions/shortcodes/images/list/26.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-27{
+	background:url(../functions/shortcodes/images/list/02.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-28{
+	background:url(../functions/shortcodes/images/list/02.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}.list-style-29{
+	background:url(../functions/shortcodes/images/list/02.png) no-repeat left;
+	float:left;
+	padding-left:2em;
+}
+
+/* Tabs */
+.tabs { margin: 0 0 1.5em 0 }
+.tabs-style-1 .tabs-nav {
+	padding: 5px 5px 0 5px;
+	margin: 0;
+	height: 40px;
+	background: #e5e5e5;
+}
+.tabs-style-1 .tabs-nav span {
+	display: block;
+	float: left;
+	padding: 0 20px;
+	height: 39px;
+	line-height: 39px;
+	margin-right: 5px;
+	cursor: pointer;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #f1f1f1;
+}
+.tabs-style-1 .tabs-nav span:hover { background: #fff }
+.tabs-style-1 .tabs-nav span.tabs-current { background: #fff }
+.tabs-style-1 .tabs-pane {
+	padding: 15px;
+	border-right: 5px solid #e5e5e5;
+	border-bottom: 5px solid #e5e5e5;
+	border-left: 5px solid #e5e5e5;
+}
+.tabs-style-2 .tabs-nav {
+	padding: 5px 5px 0 5px;
+	margin: 0;
+	height: 40px;
+	background: #222;
+}
+.tabs-style-2 .tabs-nav span {
+	display: block;
+	float: left;
+	padding: 0 20px;
+	height: 39px;
+	line-height: 39px;
+	margin-right: 5px;
+	cursor: pointer;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #f1f1f1;
+}
+.tabs-style-2 .tabs-nav span:hover { background: #fff }
+.tabs-style-2 .tabs-nav span.tabs-current { background: #fff }
+.tabs-style-2 .tabs-pane {
+	padding: 15px;
+	border-right: 5px solid #222;
+	border-bottom: 5px solid #222;
+	border-left: 5px solid #222;
+}
+.tabs-style-3 {
+	background: #fff;
+	border: 5px solid #f0f0f0;
+}
+.tabs-style-3 .tabs-nav {
+	width: 200px;
+	float: left;
+}
+.tabs-style-3 .tabs-nav span {
+	display: block;
+	padding: 5px 10px;
+	cursor: pointer;
+	background: #f0f0f0;
+}
+.tabs-style-3 .tabs-nav span:hover { background: #f7f7f7 }
+.tabs-style-3 .tabs-nav span.tabs-current { background: #fff }
+.tabs-style-3 .tabs-pane {
+	padding: 15px;
+	float: none;
+	margin-left: 200px;
+}

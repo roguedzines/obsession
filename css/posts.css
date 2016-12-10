@@ -1,0 +1,173 @@
+/*-------POSTS-------*/
+.post-content p {
+    line-height: 23px;
+}
+.posts-slider img{
+  width: 100%;
+}
+p {
+  padding: 0 0 1.3em;
+}
+.image-container {
+  padding-bottom: 10px;
+}
+.single-image {
+  margin-bottom: 20px;
+}
+.column-container {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.125);
+  background: #fff;
+}
+.single-image-container {
+  position: relative;
+  max-width: 100%;
+  display: inline-block;
+}
+.single-post-subject {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  height: 100px;
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  display: block;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.single-post-subject a {
+  color: #fff;
+}
+.standard-image {
+  border-top: 6px solid #A049FF;
+}
+.post-image {
+  border-top: 6px solid #4CC5FF;
+}
+.no-image {
+  border-top: 6px solid #E0DD6E;
+}
+.post-subject h2 {
+  text-align: center;
+  font: 25px 'Montserrat', sans-serif;
+  margin: 20px 0;
+}
+.image-post-title h2 a{
+  color:#fff;
+}
+.grid-image img {
+  display: block;
+}
+.grid-image {
+  position: relative;
+}
+.grid-content {
+  /* background: #fff; */
+  padding: 10px 20px 30px;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+}
+.grid-footer {
+  padding: 10px;
+  background: #fff;
+  font-size: 13px;
+  border-top: 1px solid #EFEFEF;
+}
+.post-content, .sidebar-content {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.125);
+  margin: 12px 0;
+}
+.post-meta {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.image-post-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.image-post-title h2 {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  font: 25px 'Montserrat', sans-serif;
+  bottom: 80px;
+  left: 30px;
+}
+.image-post-title .meta-post {
+  font-size: 13px;
+  bottom: 60px;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+}
+.image-post-title .meta-date {
+  font-size: 13px;
+  bottom: 40px;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+}
+.post-image-overlay {
+  background: #000;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .5;
+}
+body.home .quote-post blockquote, body.archive .quote-post blockquote {
+  background: #666;
+  margin: 0.25em 0;
+  position: relative;
+  padding: 2em 25px;
+  color: #fff;
+  font-style: italic;
+}
+body.home .quote-post blockquote:before,body.archive .quote-post blockquote:before {
+  content: "\201C";
+  font-size: 80px;
+  margin-right: 0;
+  color: #ccc;
+  display: block;
+  position: relative;
+  top: initial;
+  text-align: center;
+  font-family: "Georgia", sans-serif;
+  line-height: 40px;
+}
+body.home .quote-post blockquote p, body.archive .quote-post blockquote p {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+body.home .quote-post blockquote footer,body.archive .quote-post blockquote footer {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0 0;
+  font-style: normal;
+}
+body.home .quote-post blockquote footer p, body.archive .quote-post blockquote footer p {
+  border-top: 1px solid #fff;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/*sidebar*/
+
+.sidebar {
+    margin: 20px 0;
+}
+.sidebar {
+    margin: 20px 0;
+}
+.single-post-subject .post-date {
+    color: #fff;
+}

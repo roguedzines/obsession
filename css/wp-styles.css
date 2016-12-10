@@ -1,0 +1,266 @@
+/*--- breadcrumbs --- */
+
+.crumbs {
+  background: #fff;
+  margin: 2px;
+  margin-bottom: 20px;
+}
+#crumbs {
+  height: 2.3em;
+  border: 0px solid #dedede;
+}
+#crumbs li {
+  float: left;
+  line-height: 2.3em;
+  color: #777;
+  padding-left: .75em;
+}
+#crumbs li a {
+  background: url(../images/crumbs.png) no-repeat right center;
+  display: block;
+  padding: 0 15px 0 0;
+}
+#crumbs li a:link, #crumbs li a:visited {
+  color: #777;
+  text-decoration: none;
+}
+#crumbs li a:hover, #crumbs li a:focus {
+  color: #dd2c0d;
+}
+.edit-link {}
+.entry-meta {}
+.entry-meta a {
+  color: #333;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+  font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+/* Tag Styles */
+
+
+/* blockquote */
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  display: block;
+  margin: 0.25em 0;
+  padding: 1.5em 40px;
+  line-height: 1.45;
+  position: relative;
+  background: #F3F3F3;
+}
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+/* form */
+
+.comments-container {
+  width: 100%;
+  max-width: 50%;
+}
+p.comment-notes {
+  font-size: 14px;
+}
+fieldset {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+input:-moz-placeholder {
+  color: #fff;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+input[type="text"], textarea {
+  background: #eee;
+  border: solid 1px #ddd;
+  padding: 6px 5px;
+}
+.input_search {
+  display: inline;
+}
+input[type="text"] {
+  width: 100%;
+  max-width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 180px;
+}
+input#submit {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #9A9A9A;
+}
+
+.comments-link {
+  margin: 10px;
+  width: auto;
+}
+
+/* Wordpress classes */
+
+.alignleft {
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 1.5em 1.5em;
+}
+.aligncenter {
+  margin: 0 auto;
+  display: block;
+}
+img.alignleft {
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+}
+img.alignright {
+  float: right;
+  margin: 0 0 1.5em 1.5em;
+}
+img.aligncenter {
+  margin: 0 auto;
+  display: block;
+}
+.wp-caption {
+  text-align: center;
+  background-color: #ddd;
+  width: 100%;
+}
+p.wp-caption-text {
+  padding: 10px;
+}
+.wp-caption {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* calendar widget */
+
+#wp-calendar {
+  width: 100%;
+  max-width: 100%;
+}
+#wp-calendar caption {
+  text-align: right;
+  color: #333;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#wp-calendar thead {
+  font-size: 10px;
+}
+#wp-calendar thead th {
+  padding-bottom: 10px;
+}
+#wp-calendar tbody {
+  color: #aaa;
+}
+#wp-calendar tbody td {
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 3px;
+}
+#wp-calendar tbody td:hover {
+  background: #fff;
+}
+#wp-calendar tbody .pad {
+  background: none;
+}
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+}
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.authorinfo h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 10px 5px 0px;
+}
+.authorinfo h3 a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.author-single-contain img {
+  margin: 0 1em 1em 0;
+  padding: 10px;
+  float: left;
+  border-radius: 3px;
+  width: 80px;
+  max-width: 100%;
+  height: 80px;
+}
+.authorinfo p {
+  float: left;
+  padding: 10px 0;
+}
+.authorinfo p a {
+  color: #333;
+}
+.authorinfo {
+  width: auto;
+  float: left;
+  max-width: 70%;
+}
+
+/*--- share buttons on single page --- */
+
+span.nav-previous {
+  float: left;
+}
+span.nav-next {
+  float: right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */

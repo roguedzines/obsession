@@ -1,0 +1,355 @@
+/*---------------- FONTS ---------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Anton|Pacifico|Montserrat:400,700|Questrial|Montserrat:400,700);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.3;
+  font-family: 'Droid Sans', sans-serif;
+  color: #757575;
+  font-size: 14px;
+}
+ol, ul {
+  list-style: none;
+}
+strong {
+  font-weight: bold;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
+img {
+  vertical-align: bottom;
+}
+.video embed, .video object, .video iframe {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #00A9C7;
+}
+
+/*------Containers and grids-------------*/
+
+.grid-container * {
+  box-sizing: border-box;
+}
+.grid-container {
+  /*max-width: 1140px;*/
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-sizer, .grid-item {
+  /*width: 33.333%;*/
+  width: 25%;
+}
+.home-sidebar .grid-sizer, .home-sidebar .grid-item {
+  /*width: 33.333%;*/
+  width: 33%;
+}
+[class*='col-'] {
+  float: left;
+  width: 16.66%;
+  min-height: 1px;
+  padding: 12px;
+  /* background: #fff; */
+}
+.col-1 {
+  width: 16.66%;
+}
+.col-2 {
+  /*width: 33.33%;*/
+  width: 25%;
+}
+.home-sidebar .col-2 {
+  width: 33.33%;
+}
+.masonry-container .col-2 {
+  width: 33.33%;
+  /*width: 25%;*/
+}
+.col-3 {
+  width: 50%;
+}
+.col-4 {
+  width: 66.664%;
+}
+.col-5 {
+  width: 83.333%;
+}
+.col-6 {
+  width: 100%;
+}
+.footer-wrapper .col-2 {
+  width: 25%;
+}
+
+/*------------HEADING STYLE----------------*/
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+/*-------- MAIN HERO ---------------*/
+
+#main-slider {
+  height: 600px;
+  position: relative;
+  z-index: 1;
+}
+.bg-slider {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+#homepage-slider {
+  width: 100%;
+}
+.new-slider {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  position: absolute !important;
+}
+.new-slider div {
+  height: 600px;
+  max-height: 100%;
+  background-position: center center !important;
+}
+.new-slider > div {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider-content-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  top: 30%;
+}
+.slider-content {
+  /* line-height: 600px; */
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+#main-wrapper {
+  width: 100%;
+  background: #F0F0F0;
+  padding-top: 20px;
+}
+.slider-content h1 {
+  text-align: center;
+  color: #fff;
+  font: 3.6em "Pacifico", cursive;
+  /* line-height: 518px; */
+}
+.main-overlay {
+  background: #000;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: 10;
+}
+
+/*---------Navigation-------------------*/
+
+.navigation-wrapper {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+  position: relative;
+  z-index: 30;
+}
+body.single .navigation-wrapper {
+  background: #000;
+}
+.navigation {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+/*.navigation ul li {
+  display: inline-block;
+}*/
+
+.navigation ul li a {
+  text-decoration: none;
+  /*padding: 0 2em;*/
+  text-transform: uppercase;
+  font: 15px "Montserrat", sans-serif;
+  transition: color linear .5s;
+}
+
+/*-------SOCIAL-------*/
+
+#social-wrapper {
+  width: 100%;
+  padding: 10px 0;
+  background: #53A1C5;
+}
+.social-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.social-container ul li {
+  color: #fff;
+  display: inline-block;
+  margin: 0 0.3em;
+}
+
+/*-----------Footer------------------*/
+
+.footer-wrapper {
+  width: 100%;
+  background: #333;
+}
+.footer-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/*-------------Layout elements--------------*/
+
+.loadmore-wrap {
+  text-align: center;
+}
+.load-more {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.125);
+  max-width: 16%;
+  width: 100%;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+#back-to-top:hover {
+  background: #e9ebec;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+
+/*-------------Clearers--------------*/
+
+.clear {
+  clear: both;
+}
+.left-clear {
+  clear: left;
+}
+.right-clear {
+  clear: right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
