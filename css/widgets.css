@@ -1,0 +1,61 @@
+/*---------CSS for Widgets-----------*/
+
+li.widget_recent a img{
+  max-width: 30%;
+  float:left;
+  margin-right: 0.8em;
+  margin-bottom:1em;
+}
+
+.footer-widget .tagcloud a {
+    display: inline-block;
+    font-size: 12px !important;
+    padding: 5px;
+    background: #484848;
+    border-radius:3px;
+    margin: 5px 3px 0 0 !important;
+    color: #fff;
+}
+h3.footer-widget-title{
+  font-size: 14px;
+  text-transform: uppercase;
+  color:#fff;
+  margin-bottom: 2em;
+}
+.footer-widget {
+    font-size: 13px;
+    line-height: 20px;
+}
+li.widget_recent {
+    border-bottom: 1px solid #606060;
+    margin-bottom: 15px;
+}
+h3.sidebar-widget-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid #ccc; */
+    padding-bottom: 2px;
+
+}
+.search-container input[type="text"] {
+  padding: 10px;
+  color: #949494;
+}
+.search-container .input_search {
+  max-width: 70%;
+  float: left;
+  width: 100%;
+}
+.search-container input#searchSubmit {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #9A9A9A;
+  max-width: 29%;
+  float: right;
+  width: 100%;
+}
+.search-container input#searchSubmit::after {
+  clear: both;
+}
