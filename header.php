@@ -47,7 +47,7 @@ global $data; //fetch options stored in $data
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/styles/<?php echo $data['theme_skin_color'];?>" />
 
 
-<?php } }?>
+<? } }?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 
 
@@ -118,7 +118,7 @@ echo stripslashes($data['header_tracking_analytics']);
  $slides = $data['home_slider'];
       foreach ($slides as $slide){ ?>
       <div style="background: url(<?php echo $slide['url']; ?>) no-repeat;background-size: cover;background-position: center center ;">&nbsp;</div>
-      <?php } ?>
+      <? } ?>
     </div>
     <div class="main-overlay"></div>
     <div class="navigation-wrapper">

@@ -19,13 +19,12 @@ if ( $smileys == "yes" ) $output = convert_smilies($output);
 <?php if ( $i < $tot ) :
 if ( $container == 'p' || $container == 'div' ) : ?></p><?php endif;
 if ( $container != 'plain' ) : ?><?php echo $container; ?><?php if ( $container == 'div' ) : ?><p><?php endif; endif; ?>
-<? if(is_home()) { ?>
+<? if(is_home()){  ?>
 <div class="readmore-link"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo $link_text; ?></a></div>
 <?php } else { ?>
   <div class="readmore-link-text"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo $link_text; ?></a></div>
 
-<?php }
-?>
+<?php } ?>
 <?php
 if ( $container == 'div' ) : ?></p><?php endif; if ( $container != 'plain' ) : ?></<?php echo $container; ?>><?php endif;
 if ( $container == 'plain' || $container == 'span' ) : ?></p><?php endif;

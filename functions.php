@@ -19,9 +19,9 @@ $content_width=980;
 require_once('functions/widgets/widget-recent-posts.php');
 require_once('functions/widgets/twitter-widget.php');
 require('functions/better-comments.php');
-//require('functions/custom-excerpt.php');
+require('functions/custom-excerpt.php');
 require('functions/shortcodes/shortcodes.php');
-require('functions/plugins.php');
+require_once get_template_directory() . '/plugins/class-tgm-plugin-activation.php';
 
 /*--------------Remove junk from header------------*/
 remove_action( 'wp_head', 'rsd_link' );
@@ -51,7 +51,7 @@ add_theme_support('custom-header',$args);
 add_theme_support('automatic-feed-links');
 add_editor_style('custom-editor-style.css');
 add_theme_support('custom-background',$args);
-
+add_theme_support( 'woocommerce' );
 set_post_thumbnail_size(120,80);
 add_image_size('full-size', 9999,9999);
 add_image_size('front-masonry',600,400, true);
@@ -178,7 +178,46 @@ wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.
 }
 
 
+add_action( 'tgmpa_register', 'obsession_theme_register_required_plugins' );
 
+function obsession_theme_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
+
+		// This is an example of how to include a plugin bundled with a theme.
+		array(
+			'name'               => 'Meta Box', // The plugin name.
+			'slug'               => 'meta-box', // The plugin slug (typically the folder name).
+			//'source'             => get_template_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		)
+  );
+
+	$config = array(
+		'id'           => 'obsession_theme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'parent_slug'  => 'themes.php',            // Parent menu slug.
+		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                      // Message to output right before the plugins table.
+
+
+	);
+
+	tgmpa( $plugins, $config );
+}
 
 
 // fire up stylesheets on load
@@ -356,6 +395,36 @@ function getPostLikeLink($post_id)
 
 //create function to add javascript fix to header
 
+function saxon_JavaFix(){
+	?>
+
+	<script type="text/javascript">
+	jQuery(function(){
+(function(doc) {
+
+	var addEvent = 'addEventListener',
+	    type = 'gesturestart',
+	    qsa = 'querySelectorAll',
+	    scales = [1, 1],
+	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+
+}(document));
+	});
+</script>
+	<?php
+}
+add_action('wp_head','saxon_JavaFix');
 // create function for pagination
 
 function saxonTheme_pagination($pages = '', $range = 2)
@@ -1140,4 +1209,3 @@ return $option_posts_per_page;
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 $wp_rewrite->flush_rules();
 }
-?>

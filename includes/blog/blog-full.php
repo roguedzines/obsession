@@ -1,4 +1,4 @@
-<?php // get data for options
+<? // get data for options
 global $data;
 global $post;
 if ($data['home_blog_post_count']!='8') {
@@ -18,7 +18,7 @@ query_posts(array(
 );
 ?>
 
-<?php
+<?
 if(have_posts()):?>
 
 <?php get_template_part('loop','masonry');

@@ -1,3 +1,4 @@
+<div class="clear"></div>
 <div class="footer-wrapper">
   <div class="footer-container">
     <div class="row">

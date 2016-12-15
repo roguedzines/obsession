@@ -27,12 +27,7 @@ global $data;
                 <?php get_template_part('format','video'); ?>
                   <?php } else { ?>
           <? get_template_part('format','standard'); ?>
-          <?php
-          } 
-        }
-      }
-    }
-    ?>
+          <?php } } } }?>
       </div>
     </div>
 
