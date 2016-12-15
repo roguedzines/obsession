@@ -1,4 +1,6 @@
 <?php //get theme options
+
+
 global $data;
 ?>
 <?php get_header(); ?>
