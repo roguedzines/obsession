@@ -9,7 +9,7 @@ function better_excerpts(
 {
 global $post;
 if ( $allowed_tags == 'all' ) $allowed_tags = '<a>,<i>,<em>,<b>,<strong>,<ul>,<ol>,<li>,<span>,<blockquote>,<img>';
-$text = preg_replace('/[*]/', '', strip_tags($post->post_content, $allowed_tags));
+$text = preg_replace('/([*]|\[(.*?)\])/', '', strip_tags($post->post_content, $allowed_tags));
 $text = explode(' ', $text);
  $text = str_replace('\]\]\>', ']]&gt;', $text);
 $tot = count($text);
